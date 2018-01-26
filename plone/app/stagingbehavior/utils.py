@@ -36,7 +36,7 @@ def get_checkout_relation( context ):
 
 def get_baseline( context ):
     relation = get_checkout_relation( context )
-    if relation and relation.from_id:
+    if relation and relation.from_object:
         intids = component.getUtility( IIntIds )
         return intids.getObject( relation.from_id )
     return None
