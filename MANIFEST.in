@@ -2,6 +2,6 @@ include setup.py
 include *.rst
 exclude *.cfg
 exclude bootstrap.py
-graft cpskin 
-recursive-include docs *.txt
+graft plone 
+recursive-include docs *.rst
 global-exclude *.pyc
